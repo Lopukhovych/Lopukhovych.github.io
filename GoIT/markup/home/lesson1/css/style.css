@@ -1,0 +1,22 @@
+.field{
+	width: 330px;
+	height: min-height;
+	outline: 1px solid #000;
+	margin:0 auto;
+	padding: 20px 40px 20px 40px;
+	font-size: 15px;
+}
+/*.header{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}*/
+li{
+	padding-top: 10px;
+}
+.foto,h2{
+text-align: center;
+}
+.border{
+	border-top: 1px solid black;
+}
