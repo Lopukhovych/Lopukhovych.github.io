@@ -42,6 +42,7 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 	background-color: #444444;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
+	margin: 0px;
 }
 .top_menu a{
 	color: #ffffff;
@@ -69,12 +70,14 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 	display: block;
 	border: 1px solid #c8c8c8;
 	padding: 10px;
+	margin: 0 1px;
 
 }
 .sidebar li:hover{
 	background-color: #efeeee;
 	border: 1px solid gray;
 	color: black;
+	margin: 0px;
 }
 .sidebar a{
 	text-decoration: none;
@@ -108,9 +111,9 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 	padding-right: 40px;
 	/*background-color:#e1e1e1;*/
 }
-.bottom li:last-child{					/*Когда разкомментирую float:right; /*
-	/*float:right;*/					/*2014 &copy All rights reserved встает на свое место, но */
-	text-align: right;					/*все что я применил к классу bottom пропадает*/
+.bottom li:last-child{					
+	float:right;				
+	/*text-align: right;*/				
 	color: #2c2c2c;
 }
 
