@@ -8,6 +8,7 @@
 	font: 12pt sans-serif;
 	border-left: 1px solid #e7e7e7;
 	border-right: 1px solid #e7e7e7;
+
 }
 /*.field{
 	width: 330px;
@@ -17,13 +18,14 @@
 	padding: 20px 40px 20px 40px;
 	font-size: 15px;
 }*/
-h1{
-	font: bold 50px sans-serif;
+.Logo{
 	margin-top: 30px;
 	margin-bottom: 20px ;
 }
+
 .top_menu{
-	background-color: #595959;
+	/*background-color: #595959;*/
+	background: -webkit-linear-gradient(top, #5d5d5d 0%,#7f7b7b 50%,#7f7b7b 51%,#5d5d5d 100%);
 }
 ul .top_menu{				/*я пытался убрать отступы между строками, */
 	font-size: 0;			/*но ссылка на xiper.net не помогла*/	
@@ -34,20 +36,25 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 	display:inline-block;
 	padding: 10px;
 	padding-right: 40px;
-	color:white;
+	
 }
 .top_menu li:hover{
 	background-color: #444444;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 }
+.top_menu a{
+	color: #ffffff;
+	text-decoration: none;
+}
 .img{
 	width: 600px;
 	height: 300px;
 	margin:20px;
+	margin-top: 35px;
 	padding: 40px;
 	float: right;
-	border: 1px solid gray;
+	border: 1px solid #c8c8c8;
 	text-align: center;
 }
 /*ul .sidebar{
@@ -67,6 +74,11 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 .sidebar li:hover{
 	background-color: #efeeee;
 	border: 1px solid gray;
+	color: black;
+}
+.sidebar a{
+	text-decoration: none;
+	color: #656363;
 }
 .Lorem{
 	/*width:700px;*/
@@ -76,6 +88,8 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 	display:inline-block;
 	line-height: 1.5;
 	font-size: 14px;
+	color: #2c2c2c;
+
 }
 .bottom{
 	background-color:#e1e1e1;
@@ -90,5 +104,11 @@ ul .top_menu{				/*я пытался убрать отступы между ст
 .bottom li:last-child{
 	float:right;
 	text-align: right;
+	color: #2c2c2c;
+}
+.bottom a{
+	text-decoration: none;
+	float:left;
+	color: #2c2c2c;
 }
 
