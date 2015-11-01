@@ -1,0 +1,68 @@
+body  {
+	width: 900px;
+	/*height: auto;*/
+	margin: 0 auto;
+	background: url(../img/Unt.jpg) no-repeat center top; 
+	/*background-position:center;*/
+	/*background-color: black;*/
+	color: white;
+	padding-left: 20px;
+}
+
+.Logo{
+	width: 30%;
+	margin-top: 65px;
+	margin-left: 20px;
+	float: left;
+}
+.contact{
+	margin-top: 160px;
+	margin-right: 210px;
+	float: right;
+	width: 100px;
+	/*float: right;*/
+	/*display:inline-block;*/
+	font-size: 14px;
+}
+
+.contact span{
+	font: 18px bold;
+}
+.clearfix:after{
+	content: '';
+	clear:both;
+	display:block;
+	margin-bottom: 0px;
+}
+.content-top li{
+	float:left;
+	list-style: none;
+	margin: 10px;
+	margin-top:0px;
+}
+.content-top a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+.content-bottom li{
+	float:left;
+	list-style: none;
+	margin: 10px;
+	margin-top:0px;
+}
+.content-bottom a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+.footer{
+	height: 150px;
+	position: relative;
+}
+.copyright{
+	position: absolute;
+	right: 40%;
+    top: 90%;
+    font-size: 14px;
+}
