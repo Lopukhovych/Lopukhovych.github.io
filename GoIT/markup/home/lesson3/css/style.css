@@ -1,127 +1,125 @@
 .field{
-	width: 1000px;
-	/*padding:0;*/
+	width: 950px;
 	margin:0 auto;
-	/*outline: 1px solid #000;*/
-	padding: 10px 40px 20px 40px;
+	padding: 50px;
+	background-color: white;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 	font: 12pt sans-serif;
-	border-left: 1px solid #e7e7e7;
-	border-right: 1px solid #e7e7e7;
+	
 
 }
-/*.field{
-	width: 330px;
-	height: min-height;
-	outline: 1px solid #000;
-	margin:0 auto;
-	padding: 20px 40px 20px 40px;
-	font-size: 15px;
-}*/
+/*header*/
 .Logo{
-	margin-top: 30px;
-	margin-bottom: 20px ;
+	line-height: 0;
 }
 
 .top_menu{
-	/*background-color: #595959;*/
-	background: -webkit-linear-gradient(top, #5d5d5d 0%,#7f7b7b 50%,#7f7b7b 51%,#5d5d5d 100%);
-	margin: 0 1px;
-}
-ul .top_menu{				/*я пытался убрать отступы между строками, */
-	font-size: 0;			/*но ссылка на xiper.net не помогла*/	
-	line-height:0;				
-	letter-spacing:-1px;
+	margin: 40px 0 0 0 ;
+	background: linear-gradient(to top, #444343, #5e5e5e );
+	
 }
 .top_menu li{
 	display:inline-block;
-	padding: 10px;
-	padding-right: 40px;
-	
 }
-.top_menu li:hover{
-	background: -webkit-linear-gradient(top, #5f5c5c 0%,#323131 50%,#323131 51%,#5f5c5c 90%);
-	/*border-left: 1px solid white;
-	border-right: 1px solid white;*/
-	margin: 0;
+.top_menu li a:first-child{
+	margin-left: 0;
 }
-.top_menu a{
-	color: #ffffff;
+.top_menu li a:hover{
+	padding: 0 23px 0 23px;
+	background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+	border-left: solid 1px #838383;
+	border-right: solid 1px #838383;
+}
+.top_menu li a{
+	display: block;
+	margin: 0 16px 0 16px;
+	padding: 0 24px 0 24px;
+	line-height: 40px;
 	text-decoration: none;
+	color: white;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
 }
-.img{
-	
-	height: 300px;
-	padding: 40px;
-	float: right;
-	padding-left: 120px;				/* вот не знаю как разположить*/
-	padding-right: 110px;				/* картинку по центру области не использовав*/
-	border: 1px solid #c8c8c8;			/*паддинг, text-align: center; не работает*/
-	margin-bottom: 20px;
-}
-
-/*ul .sidebar{
-	float: left;
-}*/
+/*header*/
+/*sidebar*/
 .sidebar{
-	margin-top:35px;
-	line-height: 1.5;
+	border: solid 1px #c8c8c8;
+	float: left;
+	
 }
 .sidebar li{
-	width: 220px;
+	border-bottom: solid 1px #c8c8c8;
+}
+.sidebar li:last-child{
+	border-bottom: none;
+}
+.sidebar li a{
+	
 	display: block;
-	border: 2px solid #c8c8c8;
-	padding: 10px;
-	margin: 0 1px;
-
-}
-.sidebar li:hover{
-	background-color: #efeeee;
-	border: 3px solid gray;
-	color: black;
-	margin: 0;
-}
-.sidebar a{
+	width: 214px;
+	padding: 0 0 0 23px;
+	line-height: 39px;
 	text-decoration: none;
 	color: #656363;
+}
+.sidebar li:hover{
+	width: 212px;
+	padding: 0 0 0 25px;
+	background-color: #f9f9f9;
+	color: #2c2c2c;
 }
 .clearfix:after{
 	content:'';
 	clear: both;
 	display:block;
 }
+/*sidebar*/
+/*content*/
+.conteiner{
+	padding: 40px 0 20px;
+}
+.content{
+	float: right;
+	width: 627px;
+	text-align: left;
+}
+.img{
+	height: 340px;
+	padding: 35px;
+	background-color: white;
+	border: 1px solid #c8c8c8;
+	text-align: center;	
+}
 .Lorem{
-	width:740px;
-	padding:10px;
-	line-height: 1.5;
+	margin: 20px 15px;
+	line-height: 1.5em;
 	font-size: 14px;
 	color: #2c2c2c;
-	float: right;
 }
+/*content*/
+/*bottom*/
 .bottom{
+	height: 40px;
 	margin-top: 40px;
-	margin-bottom:30px;
+	padding: 0 24px;
 	background-color: #e1e1e1;
 }
-.bottom a{
-	text-decoration: none;
-	float:left;
-	color: #2c2c2c;
-}
-
 .bottom li{
-	display:inline-block;
-	padding: 10px;
-	padding-right: 40px;
-	/*background-color:#e1e1e1;*/
+	float:left;
+	margin: 0 40px;
+}
+.bottom li:first-child{
+	margin-left: 0;
 }
 .bottom a:hover{
 	text-decoration: underline;
 }
-.copyright{					
-	float:right;				
-	/*text-align: right;*/				
-	color: #2c2c2c;
-	margin-top: 10px;
-	margin-right: 10px;
+.bottom li a, .copyright{
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	color: #2c2c2c;					
 }
-
+.copyright{
+	float: right;
+}
+/*bottom*/
