@@ -94,8 +94,22 @@ clear: right;
 	background: url(../img/triangle.png);*/ /*не получилось вставить картинку*/
 
 }
+.services:after{
+	content:'\25be';
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 17px;
+}
+.partners:after{
+	content:'\25be';
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 17px;
+}
 .menu ul{
-	/*display: none;*/
+	display: none;
 
 	position: absolute;
 	top: 100%;
@@ -113,39 +127,46 @@ clear: right;
 	padding: 0 10px;
 }
 .menu li:hover ul{
-	/*display: block;*/
+	display: block;
 	visibility: visible;
 	opacity: 1;
 }
 .content{
 	background: white;
-	float: left;
+	/*float: left;*/
 	width: 100%;
 	font-family: Tahoma;
+	height: 100%;
+	box-shadow: inset 0px 2px 6px 0px rgba(0,0,0,0.75);
 }
 
 .leftColumn{
-	display:block;
-	width: 25%;
+	width: 230px;
 	float:left;
 	background:#edeef0;
+	height: 563px;
+	border-right: 1px solid #c7cacf;
 }
 .centerColumn{
 	display:block;
-	width: 50%;
+	width: 540px;
 	float:left;
 	background: #ffffff;
+	
 }
 .rightColumn{
 	display:block;
-	width: 25%;
+	width: 230px;
 	float: right;
 	background:#edeef0;
+	border-left: 1px solid #c7cacf;
+	padding-bottom: 10px;
 }
 .content span{
+	font-weight: bolder;
 	display: block;
 	text-align: center;
-	font-size: 24px;
+	font-size: 20px;
     font-family: "Tahoma";
     color: rgb( 66, 76, 67 );
 }
