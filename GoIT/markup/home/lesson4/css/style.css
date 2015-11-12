@@ -115,9 +115,9 @@ clear: right;
 	top: 100%;
 	left: 23px;
 	visibility: visible;
-	/*visibility: hidden;*/
+	visibility: hidden;
 	transition: all 0.5s;
-	/*opacity: 0;*/
+	opacity: 0;
 }
 .menu ul li{
 	background:#303030;
