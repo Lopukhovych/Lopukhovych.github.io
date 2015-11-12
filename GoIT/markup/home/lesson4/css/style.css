@@ -114,7 +114,7 @@ clear: right;
 	position: absolute;
 	top: 100%;
 	left: 23px;
-	visibility: visible;
+	/*visibility: visible;*/
 	visibility: hidden;
 	transition: all 0.5s;
 	opacity: 0;
