@@ -107,7 +107,6 @@ button:focus {
 	margin-bottom: 10px;
 
 }
-
 /*.facebook ul li{*/
 	/*float:left;*/
 /*}*/
@@ -118,28 +117,23 @@ button:focus {
 	background: -o-linear-gradient(#3b5798 0%, #2c4677 100%);
 	background: linear-gradient(#3b5798 0%, #2c4677 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5798', endColorstr='#2c4677',GradientType=0 ); /* IE6-9 */
-	 /*margin-right: 0px;*/
 	 line-height: 18px;
-	/*font-weight: bold;*/
+	
 	font-size: 18px;
 	color: #ffffff;
 	padding: 7px;
-	font-family:  sans-serif;
+	font-family: "Helvetica Heue Regular", sans-serif;
 	border-radius: 10px;
 }	
 .f{
 	
  	font-weight: bold;
- 	/*margin:0 20px;*/
  	padding: 0 10px 0 7px;
 	border-right: 2px solid #1f3d71;
 	height: 15px;
 }
 .Log{
 	margin: 0 7px;
-	/*padding: 0 10px 0 10px;*/
-	/*font-weight: bold;*/
-	/*margin-right: 5px;*/
 }
 .Log b{
 	font-weight: bold;
