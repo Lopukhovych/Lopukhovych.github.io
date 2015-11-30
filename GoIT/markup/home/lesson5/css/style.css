@@ -17,15 +17,20 @@
 	width: 100%;
 }
 body{
+	/*width: 1124px;*/
 	background: url(../img/back02.png) center top no-repeat;
 	background-size: cover;
 	font-family:'Helvetica Neue Regular', Arial, sans-serif;
 	font-size: 14px;
+	/*width: 1124px;*/
+	
 }
+
 .nav{
 	background: url(../img/nav_back.png);
 	height: 35px;
 	width: 100%;
+	margin: 0 auto;
 }
 .nav_Ola{
 	color:#ffffff;
@@ -207,11 +212,10 @@ input[type="checkbox"]+label{
 	color: #cccccc;
 }
 .button02{
-	text-align: center;
-	margin:24px auto 0 auto;
-	width: 150px;
+	margin:24px auto 0 62px;
 }
-.button02 a{
+.button02 input[type="submit"]{
+	width: 150px;
 	display: block;
 	line-height: 37px;
 	color: #fff;
