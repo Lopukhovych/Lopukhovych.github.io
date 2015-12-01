@@ -30,6 +30,10 @@ body{
 	background: url(../img/nav_back.png);
 	height: 35px;
 	width: 100%;
+	
+}
+.topmenu{
+	width: 1124px;
 	margin: 0 auto;
 }
 .nav_Ola{

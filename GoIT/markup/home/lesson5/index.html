@@ -8,18 +8,20 @@
 </head>
 <body>
 	<div class="page">
-		<div class="nav clearfix topmenu">
-			<div class="nav_Ola"><span>Ola! </span><a href="#"> Entrar </a><span> ou </span><a href="#"> Cadastre-se </a></div>
-			<div class="nav_flag"><span>Minhas Ofertas</span></div>
-			<ul class="menu">
-				<li><a href="#">Meu YouBike</a></li>
-				<li><a href="#">Vender</a></li>
-				<li><a href="#">Forum</a></li>
-				<li><a href="#">Contato</a></li>
-				<li><a href="#">Anjuda</a></li>
-			</ul>
+		<div class="nav clearfix">
+			<div class="topmenu">
+				<div class="nav_Ola"><span>Ola! </span><a href="#"> Entrar </a><span> ou </span><a href="#"> Cadastre-se </a></div>
+				<div class="nav_flag"><span>Minhas Ofertas</span></div>
+				<ul class="menu">
+					<li><a href="#">Meu YouBike</a></li>
+					<li><a href="#">Vender</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Anjuda</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="content">
+		<div class="content clearfix">
 			<div class="formheader">
 				<p>Cadastre-se</p>
 			</div>
@@ -32,11 +34,11 @@
 				</div>
 				<div class="form">
 					<form action="#">
-						<input type="text" placeholder="First Name">
-						<input type="text" placeholder="Last Name">
-						<input type="email" placeholder="Email Address">
-						<input type="password" placeholder="Choose Password">
-						<input type="password" placeholder="Confirm Password">
+						<input type="text" placeholder="First Name" required>
+						<input type="text" placeholder="Last Name" required>
+						<input type="email" placeholder="Email Address" required>
+						<input type="password" placeholder="Choose Password" required>
+						<input type="password" placeholder="Confirm Password" required>
 						<div class="checkbox">
 							<input type="checkbox"  name="send_updates" id="send"><label for="send">Send me Youbike updates and tips</label>
 						</div>
