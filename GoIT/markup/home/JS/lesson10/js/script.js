@@ -17,7 +17,7 @@ if(exp>=0){
 		}
 		return number;
 	} 
-	alert(Power(base, exp));
+	console.log('exp(',base,',',exp,')= ',Power(base, exp));
 } else{
 	alert('Вы ввели не корректное значение')
 }
