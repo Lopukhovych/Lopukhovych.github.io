@@ -29,7 +29,6 @@ var newElem = {
 		var input = newElem.createElement('input',div,'button');
 		input.type = 'submit';
 		input.value = text;
-		newElem.createElement('span', input ,'',input.value );
 	}
 }
 var form = newElem.createElement('form',body,'form');
