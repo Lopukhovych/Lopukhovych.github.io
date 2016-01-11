@@ -3,7 +3,7 @@ body{
 	margin: 0 auto;
 	background-color: #D3D3D3;
 }
-.warp{
+.form{
 	background: white;
 }
 .header{
@@ -40,7 +40,4 @@ li{
 	margin: 40px 25%;
 	background: rgba(135, 206, 250, 0.7);
 
-}
-.inside{
-	padding: 5px 10px;
 }

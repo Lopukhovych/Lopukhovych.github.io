@@ -23,13 +23,22 @@ var newElem = {
 		var input = newElem.createElement('input',label);
 		input.type= 'checkbox';
 		newElem.createElement('span', label ,'',text);
+	},
+	createButton : function(parent,text){
+		var div = newElem.createElement('div',parent,'submit');
+		var label = newElem.createElement('label',div);
+		var input = newElem.createElement('input',label,'button');
+		input.type = 'submit';
+		input.value = text;
+		newElem.createElement('span', input ,'',input.value );
 	}
 }
-var warp = newElem.createElement('div',body,'warp');
-var head = newElem.createElement('div',warp,'header');
+var form = newElem.createElement('form',body,'form');
+form.action = '#';
+var head = newElem.createElement('div',form,'header');
 newElem.createElement('p',head,'article','Тест по программированию');
 
-var content = newElem.createElement('div',warp,'wrapper');
+var content = newElem.createElement('div',form,'wrapper');
 var questionul = newElem.createElement('ul',content,'list');
 for(var i = 0; i <3; i++){
 	var li = newElem.createElement('li',questionul,'');
@@ -41,5 +50,5 @@ for(var i = 0; i <3; i++){
 	}
 }
 
-var button = newElem.createElement('button', warp,'button' );
-newElem.createElement('span', button,'inside','Проверить мои результаты')
+var button = newElem.createButton(form,'Проверить мои результаты');
+// newElem.createElement('span', button,'inside','Проверить мои результаты');
