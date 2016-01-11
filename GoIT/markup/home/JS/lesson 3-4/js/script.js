@@ -26,8 +26,7 @@ var newElem = {
 	},
 	createButton : function(parent,text){
 		var div = newElem.createElement('div',parent,'submit');
-		var label = newElem.createElement('label',div);
-		var input = newElem.createElement('input',label,'button');
+		var input = newElem.createElement('input',div,'button');
 		input.type = 'submit';
 		input.value = text;
 		newElem.createElement('span', input ,'',input.value );
