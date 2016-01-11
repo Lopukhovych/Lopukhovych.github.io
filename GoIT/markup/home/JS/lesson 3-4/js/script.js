@@ -31,10 +31,13 @@ var newElem = {
 		input.value = text;
 	}
 }
-var form = newElem.createElement('form',body,'form');
-form.action = '#';
-var head = newElem.createElement('div',form,'header');
+var warp = newElem.createElement('div',body,'warp');
+
+var head = newElem.createElement('div',warp,'header');
 newElem.createElement('p',head,'article','Тест по программированию');
+
+var form = newElem.createElement('form',warp,'');
+form.action = '#';
 
 var content = newElem.createElement('div',form,'wrapper');
 var questionul = newElem.createElement('ul',content,'list');
