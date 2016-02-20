@@ -55,6 +55,7 @@ function Timer(){
 		// console.log(self.pausePeriod);
 
 		butStart.innerHTML = 'Pause';
+		butStart.classList.add('change');
 
 		timerId = setInterval(self.updateCounter, 30);
 		// console.log(self.updateCounter());
@@ -67,6 +68,8 @@ function Timer(){
 		clearInterval(timerId);
 		self.lastPauseTime = self.currTime();
 		butStart.innerHTML = 'Conti..';
+		butStart.classList.remove('change');
+
 		butStart.removeEventListener('click',self.pause);
 		butStart.addEventListener('click',self.start);
 	}
