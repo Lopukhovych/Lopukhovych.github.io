@@ -1,0 +1,38 @@
+.wrapper{
+	width: 300px;
+	margin: 150px auto;
+}
+.timerField{
+	margin: auto;
+	width: 190px;
+	border: 5px solid #34495e;
+	border-radius: 10px; 
+}
+.scboard{
+	font: bold 40px Tahoma sans-serif;
+	text-align: center;
+	line-height: 70%;
+}
+.mlsec{
+	font: bold 15px sans-serif;
+	text-align: right;
+	padding-right: 25px;
+}
+.start{
+	margin: 20px;
+	width: 100px;
+	height: 40px;
+	background: #2ecc71;
+	border: 5px solid #34495e;
+	border-radius: 10px ; 
+}
+
+.clear{
+	margin-left: 35px;
+	width: 100px;
+	height:40px;
+	/*margin-: 30px;*/
+	background: #e74c3c;
+	border: 5px solid #34495e;
+	border-radius: 10px ;
+}
