@@ -27,8 +27,8 @@ function Timer(){
 		if(minutes < 10){
 			minutes = '0'+ minutes;
 		}
-		var seconds = Math.floor((time/1000)%60);
-		if(seconds < 10){
+		var seconds = Math.floor((time/1000) % 60);
+		if(seconds < 10){ 	
 			seconds = '0'+ seconds;
 		}
 		var ms = Math.floor(time % 1000);
