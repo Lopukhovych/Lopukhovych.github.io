@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 	var $link = $('.wrapper a');
 	// console.log($link);
 	$link.append("<em></em>");
