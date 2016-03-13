@@ -1,23 +1,25 @@
 $(document).ready(function(){
-	var $link = $('.wrapper a');
-	// console.log($link);
-	$link.append("<em></em>");
+	var $input = $('input[type = "text"]');
 
-	$link.hover(function() {
-		$(this).find("em").stop(true, true).animate({opacity: "show"}, "slow");
-		var hoverText = $(this).attr("title");
-	    $(this).find("em").text(hoverText);
-	}, function() {
-		$(this).find("em").stop(true, true).animate({opacity: "hide"}, "slow");
+
+	$input.hover(function(){
+		var $span = $(this).prev();
+		$span.animate({opacity: "show"}, "slow");
+	}, function(){
+		var $span = $(this).prev();
+		$span.animate({opacity: "hide"}, "slow");
 	});
 
-		var $button = $(".button");
-		$button.on('click', function(){
-			$link.find('em').show();
-		});
 
+	var $button = $(".button");
+	
+	$button.on('click', function(){
+		$('span').show();
+		setTimeout(function(){
+			$('span').animate({opacity: "hide"}, "slow");
+		}, 1200);
+	});
 	
 });
 
 
-		// $(this).find("em").stop(true, true).animate({opacity: "show"}, "slow");

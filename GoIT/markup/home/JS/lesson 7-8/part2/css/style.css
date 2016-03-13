@@ -9,10 +9,11 @@
 	font: 20px serif;;
 }
 
-.formText{
+.formText {
 	margin: 20px 10px;
 	position: relative;
 }
+
 /* .formText a{
 	width: 140px;
 
@@ -36,13 +37,13 @@ input[type="text"]{
 }
 
 .firstName{
-	margin-left: 35px;
+	margin-left: 34px;
 }
 .secondName{
-	margin-left: 10px;
+	margin-left: 12px;
 }
 .address{
-	margin-left: 55px;
+	margin-left: 53px;
 }
 
 .formText em{
@@ -58,4 +59,20 @@ input[type="text"]{
 	color:  black;
 	text-align: center;
 	display: none;
+}
+
+span{
+	left: 300px;
+	top: 0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	padding: 5px 5px;
+	background: #fff;
+	border: 1px solid #7f8c8d;
+	font: 12px Arial serif;
+	color:  black;
+	text-align: center;
+	display: none;
+
 }
