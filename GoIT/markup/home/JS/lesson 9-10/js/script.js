@@ -183,5 +183,5 @@ $('.dropdown').hover(
     backgroundColor:"#16a085",
   },350);
   }
-  );s
+  );
 });
