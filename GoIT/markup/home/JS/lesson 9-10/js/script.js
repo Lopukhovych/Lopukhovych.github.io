@@ -176,6 +176,13 @@ $('.dropdown').hover(
   },
   function(){
     $(this).children('.sub-menu').slideUp(200);
-      }
-);
+  }
+  );
+$('.sub-menu').hover(function(){
+  console.log("ответ при наведении на sub-menu");
+  $(this).animate({
+    backgroundColor:"#f39c12",
+  },200);
+  $(this).css('background','#00695C');
+  });
 });
