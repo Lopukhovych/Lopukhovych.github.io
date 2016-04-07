@@ -183,6 +183,6 @@ $('.sub-menu').hover(function(){
   $(this).animate({
     backgroundColor:"#f39c12",
   },200);
-  $(this).css('background','#00695C');
+  // $(this).css('background','#00695C');
   });
 });
