@@ -1,0 +1,291 @@
+ .clearfix{
+content: "";
+display: block;
+clear: both;
+} 
+.wrapper{
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+}
+/* Карусель */
+.jcarousel {
+    width:  100%;
+    height: 120px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    padding: 1px 5px 1px 1px;
+    border: 2px solid #4E443C;
+    border-radius: 5px;
+}
+.jcarousel ul {
+     width: 20000em; 
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li{
+    /* Required only for block elements like <li>'s */
+    float: left;
+    /*width: 220px;*/
+    width: auto;
+    height: 130px;
+}
+.jcarousel li img{
+    display: block;
+    width: 250px;
+    height: 120px;
+    max-width: 100%;
+    /*height: auto ;*/
+}
+/* Стрелочки */
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50px;
+    
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 7px;
+}
+/* Индикатор карусели */
+ .jcarousel-pagination {
+
+    padding: 2px 2px 2px 8px;
+    border-radius: 10px;
+    border: 1px solid #4E443C;
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+content: ".";
+display: block;
+clear: both;
+} 
+
+ .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 8px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+} 
+ .jcarousel-pagination a.active {
+    /*width: 11px;*/
+    border-radius: 10px;
+    background: black;
+    transition-duration: 2s;
+    color: #4E443C;
+    opacity: 1;
+    border: 1px solid #4E443C;
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+} 
+/*стилизация селекта*/
+select{
+    vertical-align: middle; 
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 350px;
+    /*z-index: 1;*/
+}
+.title1{
+    font: bold 20px   serif;
+    padding: 2px;
+    margin-bottom: 10px;
+    color:#444;
+}
+
+
+/* Выпадающее меню */
+nav{
+    background-color:#16a085;
+    margin: 20px 0px;    
+}
+
+nav ul{
+   
+    margin: 0;
+    padding:0;
+}
+nav ul.sub-menu{
+  display:none; 
+  z-index: 1;
+}
+
+nav ul li{
+    margin-left: 20px;
+
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    width: 100px;
+    position: relative;
+}
+
+
+nav li ul{
+    background: #00695C;
+    position: absolute;
+    left: -5px;
+    top: 33px;
+    width: 150px;
+} 
+nav li li{
+    position: relative;
+    margin: 0;
+    display: block;
+    width: 130px;
+    padding-left: 10px;
+    border-bottom: solid 1px #fff;
+}
+nav li li ul{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    margin: 0;
+}
+/* стиль ссылок в nav */
+nav a{
+    line-height: 35px;
+    padding: 0px;
+    margin: 0px;
+}
+ nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+ }
+ nav a:hover,
+ nav a:focus,
+ nav a:active{
+    color: #ecf0f1;
+ }
+
+ nav li li a{
+  width: 140px;
+  padding: 0;
+ }
+
+ nav li  li:last-child {
+    border-bottom: none;
+ }
+ nav li.dropdown > a{
+    background-image: url('../img/arrow-down.png');
+    background-position: 45px 16px;
+    background-repeat: no-repeat;
+ }
+nav li li.dropdown > a{
+    background-image: url('../img/arrow-right.png');
+    background-position: 120px 16px;
+    background-repeat: no-repeat;
+}
+/*Чекбокс с помощью jQuery*/ 
+.checkbox {
+    position: relative;
+    width: 200px;
+    margin-top: 10px;
+    background: #16a085;
+    padding: 10px;
+    color:#fff;
+}
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    overflow: hidden;
+}
+.niceChecked {
+    background-position: 0 -17px;
+}
+ input[type='checkbox']{
+    margin-left: -100px; 
+}
+
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-disabled.png);
+}
+.title2{
+    font: bold 17px Tahoma sans-serif;
+}
+
+/*Чекбокс с помощью CSS*/
+.cssCheckbox{
+    position: absolute;
+    top:0px;
+    left: 500px;
+    width: 230px;
+    background: #16a085;
+    padding: 10px;
+    color:#fff;
+    font: 16px Arial serif;
+}
+ input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+} 
+label {
+    cursor: pointer;
+}
+.cssCheckbox label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}

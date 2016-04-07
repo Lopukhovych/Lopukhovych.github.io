@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson9-10</title>
+		<link rel="stylesheet" href="css/reset.css"> 
+		<link rel="stylesheet" href="css/chosen.css"><!--css для селекта-->
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="css/style1.css">
+	<script  src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script><!--js для карусели-->
+	<script  async src="js/chosen.jquery.js"></script><!--js для карусели-->
+	<script async src="js/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<!--Карусель-->
+	<div class="jcarousel-wrapper clearfix">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/img1.jpg" alt="picture01"></li>
+				<li><img src="img/img2.jpg" alt="picture02"></li>
+				<li><img src="img/img3.jpg" alt="picture03"></li>
+				<li><img src="img/img4.jpg" alt="picture03"></li>
+				<li><img src="img/img5.jpg" alt="picture03"></li>
+				<li><img src="img/img6.jpg" alt="picture03"></li>
+			</ul>
+		</div>
+		<!-- Стрелочки и индикаторы -->
+		<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+		<p class="jcarousel-pagination"></p>
+	<!--Селект-->
+	</div>
+	<div class="select clearfix">
+		<form action="#" >
+			<div class="look side-by-side ">
+			<p class="title1">Выберите главного героя мультсериала</p>
+				<select data-placeholder="Выберите одного из героев..." class="chosen-select"   tabindex="4">
+					<option value=""></option>
+					<option value="Чебурашка">Чебурашка</option>
+					<option value="Крокодил Гена">Крокодил Гена</option>
+					<option value="Шапокляк">Шапокляк</option>
+					<option value="Крыса Лариса">Крыса Лариса</option>
+					<option value="Усатый">Усатый</option>
+					<option value="Голубой вагон">Голубой вагон</option>
+					<option value="Заяц">Заяц</option>
+					<option value="Волк">Волк</option>
+					<option value="Чиполино">Чиполино</option>
+					<option value="Том">Том</option>
+					<option value="Джери">Джери</option>
+					<option value="Чип">Чип</option>
+					<option value="Дейл">Дейл</option>
+					<option value="Гаечка">Гаечка</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<!--Анимированное меню-->
+	<div class="animatedMenu">
+		<nav>
+			<ul>
+				<li><a href="#">Nav 1</a></li>
+				<li class="dropdown">
+					<a href="#">Nav 2</a>
+					<ul class="sub-menu">
+						<li><a href="#">Nav 2.1</a></li>
+						<li><a href="#">Nav 2.1</a></li>
+						<li class="dropdown">
+							<a href="">Nav 2.3</a>
+							<ul class="sub-menu">
+								<li><a href="#">Nav 2.3.1</a></li>
+								<li><a href="#">Nav 2.3.2</a></li>
+								<li><a href="#">Nav 2.3.3</a></li>
+								<li class="dropdown">
+									<a href="#">Nav 2.3.4</a>
+									<ul class="sub-menu">
+										<li><a href="#">Nav 2.3.4.1</a></li>
+										<li><a href="#">Nav 2.3.4.2</a></li>
+										<li><a href="#">Nav 2.3.4.3</a></li>
+										<li><a href="#">Nav 2.3.4.4</a></li>
+										<li><a href="#">Nav 2.3.4.5</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Nav 2.3.5</a></li>
+							</ul>
+						</li>
+						<li><a href="">Nav 2.4</a></li>
+						<li><a href="">Nav 2.5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 3</a></li>
+				<li><a href="#">Nav 4</a></li>
+				<li class="dropdown">
+					<a href="#">Nav 5</a>
+					<ul class="sub-menu">
+						<li><a href="#">Nav 5.1</a></li>
+						<li><a href="#">Nav 5.2</a></li>
+						<li class="dropdown">
+							<a href="#">Nav 5.3</a>
+							<ul class="sub-menu">
+								<li><a href="#">Nav 5.3.1</a></li>
+								<li><a href="#">Nav 5.3.2</a></li>
+								<li><a href="#">Nav 5.3.3</a></li>	
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!--Чекбок с помощью jQuery и Css-->
+	<div class="checkbox">
+		<form action="#" >
+			<p class="title2">Чекбокс используя jquery</p>
+			<div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> 
+			</div>
+			<div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" 	value="2" />
+			</div>
+			<div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" 
+				disabled="disabled" />
+			</div>
+		</form>
+		<div class="cssCheckbox">
+			<form action="#" >
+				<p class="title2">Чекбокс используя css</p>
+					<div><input type="checkbox" id="test-check1"/><label for="test-check1">Чекбокс 1</label></div>
+					<div><input type="checkbox" id="test-check2"/><label for="test-check2">Чекбокс 2</label></div>
+					<div><input type="checkbox" id="test-check3"/><label for="test-check3">Чекбокс 3</label></div>
+			</form>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
