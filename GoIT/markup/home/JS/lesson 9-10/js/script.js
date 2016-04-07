@@ -57,12 +57,6 @@ $(function() {
     
 
 //Чекбок используя jQuery*****************************
-    /*$(".niceCheck").on("mousedown",
-       при клике на чекбоксе меняем его вид и значение 
-    function() {
-    changeCheck($(this));
-    });*/
-
   $(".niceCheck").each(
 /* при загрузке страницы меняем обычные на стильные checkbox */
   function() {
@@ -100,18 +94,6 @@ function changeCheck(el)
   
     return true;
 }
-/*function changeCheckStart(el)
-
-{
-var el = el,
-        input = el.find("input").eq(0);
-      if(input.attr("checked")) {
-        el.css("background-position","0 -17px");    
-        }
-     return true;
-}*/
-
-
 function changeVisualCheck(input)
 {
 /*
@@ -129,7 +111,8 @@ var wrapInput = input.parent();
 
 function changeCheckStart(el)
 /* 
-  новый чекбокс выглядит так <span class="niceCheck"><input type="checkbox" name="[name check]" id="[id check]" [checked="checked"] /></span>
+  новый чекбокс выглядит так <span class="niceCheck"><input type="checkbox" name="[name check]" id="[id check]"
+   [checked="checked"] /></span>
   новый чекбокс получает теже name, id и другие атрибуты что и были у обычного
 */
 {
@@ -151,7 +134,6 @@ var el = el,
       "checked='"+checkChecked+"'"+
             "value='"+checkValue+"'"+
       "tabindex='"+checkTab+"' /></span>");
-  // console.log("код 1 зашел");
   }else{
     el.after("<span class='niceCheck'>"+
       "<input type='checkbox'"+
@@ -159,39 +141,35 @@ var el = el,
       "id='"+checkId+"'"+
              "value='"+checkValue+"'"+
       "tabindex='"+checkTab+"' /></span>");
-    // console.log("код 2 зашел");
   }
 
   
-  /* если checkbox disabled - добавляем соотвсмтвующи класс для нужного вида и добавляем атрибут disabled для вложенного chekcbox */    
+  /* если checkbox disabled - добавляем соответствующий класс для нужного вида 
+  и добавляем атрибут disabled для вложенного checkbox */    
   if(checkDisabled)
   {
     el.next().addClass("niceCheckDisabled");
     el.next().find("input").eq(0).attr("disabled","disabled");
-    // console.log("код 3 зашел");
   }
   
   /* цепляем обработчики стилизированным checkbox */ 
   el.next().css({"margin-left":"10px"});   
   el.next().bind("mousedown", function(e) { changeCheck(jQuery(this)) });
   el.next().find("input").eq(0).bind("change", function(e) { changeVisualCheck(jQuery(this)) });
-    // console.log("код 4 зашел");
   el.remove();
   if(jQuery.browser.msie)
   {
     el.next().find("input").eq(0).bind("click", function(e) { changeVisualCheck(jQuery(this)) }); 
-    // console.log("код 5 зашел");
   }
   
 }
 catch(e)
 {
-  // console.log('error with loading changeCheckStart function');
   //Если ошибка, ничего не делаем 
 }
 
     return true;
-}
+} 
 
 /*Выпадающее меню*/
 $('.dropdown').hover(
