@@ -172,17 +172,16 @@ catch(e)
 /*Выпадающее меню*/
 $('.dropdown').hover(
   function(){
-    $(this).children('.sub-menu').slideDown(200);
+    $(this).children('.sub-menu').slideDown(250);
+    $(this).children('.sub-menu').animate({
+    backgroundColor:"#00695C",
+  },400);
   },
   function(){
-    $(this).children('.sub-menu').slideUp(200);
+    $(this).children('.sub-menu').slideUp(250);
+    $(this).children('.sub-menu').animate({
+    backgroundColor:"#16a085",
+  },350);
   }
-  );
-$('.sub-menu').hover(function(){
-  console.log("ответ при наведении на sub-menu");
-  $(this).animate({
-    backgroundColor:"#f39c12",
-  },200);
-  // $(this).css('background','#00695C');
-  });
+  );s
 });

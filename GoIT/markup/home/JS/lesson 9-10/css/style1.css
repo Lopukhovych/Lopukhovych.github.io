@@ -30,7 +30,6 @@ clear: both;
 .jcarousel li{
     /* Required only for block elements like <li>'s */
     float: left;
-    /*width: 220px;*/
     width: auto;
     height: 130px;
 }
@@ -39,7 +38,6 @@ clear: both;
     width: 250px;
     height: 120px;
     max-width: 100%;
-    /*height: auto ;*/
 }
 /* Стрелочки */
 .jcarousel-control-prev,
@@ -110,7 +108,6 @@ clear: both;
     box-shadow: 0 0 2px #4E443C;
 } 
  .jcarousel-pagination a.active {
-    /*width: 11px;*/
     border-radius: 10px;
     background: black;
     transition-duration: 2s;
@@ -128,7 +125,6 @@ select{
     top: 150px;
     left: 50%;
     width: 350px;
-    /*z-index: 1;*/
 }
 .title1{
     font: bold 20px   serif;
@@ -150,14 +146,13 @@ nav ul{
     padding:0;
 }
 nav ul.sub-menu{
-  background-color: #00695C;/*#16a085*/
+  background-color: #16a085;
   display:none; 
   z-index: 1;
 }
 
 nav ul li{
     margin-left: 20px;
-
     display: inline-block;
     position: relative;
     height: 35px;
@@ -167,7 +162,6 @@ nav ul li{
 
 
 nav li ul{
-    /*background-color: #16a085;*/
     position: absolute;
     left: -5px;
     top: 33px;
@@ -192,12 +186,10 @@ nav a{
     line-height: 35px;
     padding: 0px;
     margin: 0px;
-}
- nav a{
     color: #fff;
     text-decoration: none;
     display: block;
- }
+}
  nav a:hover,
  nav a:focus,
  nav a:active{
