@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 13-14</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- подключаем bootstrap, jQuery -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- подключаем шаблонизатор и выполняемый скрипт -->
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<button type="button" class="btn  btn-lg active results" data-toggle="modal" data-target="#myModal">
+  		<span>Проверить результат</span>
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel"></h4>
+		      </div>
+		      <div class="modal-body">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+	<script type="text/tamplate" id="test">
+
+		<div class="test " ><% for (var i=0; i < data.length; i++ ) {%>
+			<div class="question<%=i%> ">
+				<ul ><h3><%= data[i].question %></h3>
+					<div class="answers">
+						<% for (var j=0; j < data[i].answers.length; j++) {%>
+						<li><label for="<%= i +''+ j%>" class="liItemText"><input type="checkbox" id="<%= i +''+ j%>" ><%= data[i].answers[j] %></label></li>
+						<%};%>
+					</div>
+				</ul>
+			</div>
+		<%};%></div>
+	</script>
+</body>
+</html>

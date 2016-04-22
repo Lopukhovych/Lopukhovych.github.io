@@ -1,0 +1,63 @@
+.wrapper{
+	border: 1px solid rgba(158,158,158 , 0.3);
+	border-radius: 5px;
+	background: url("../fonts/background.png") no-repeat;
+	background-size: 100%;
+	height: auto;
+	margin: 20px auto;
+	width: 600px;
+
+}
+/*кнопка "проверить результаты"*/
+.results{
+	display: block;
+	margin: 0 auto 5px;
+	background: #f35b5b;
+	color: #fff;
+}
+.results:focus{
+	color: #fff;
+}
+input[type="button"]{
+	outline:none;
+}
+/*область со всеми вопросами */
+.test{
+	width: 530px;
+	margin: 30px auto 10px;
+}
+ul{
+	margin: 0 auto;
+}
+h3{
+	margin-top: 3px;
+	margin-left: 20px
+}
+/*область каждого вопроса*/
+.question0{
+	border: 1px solid rgba(245,245,245 ,0.5);
+	border-radius: 5px 5px 0 0 ;
+}
+.question2{
+	border-radius: 0px 0px 5px 5px;
+}
+.question0,
+.question1,
+.question2 {
+	background: #fff;
+	color: #656565;
+	height: auto;
+	margin: 2px auto;
+	padding: 2px 0 3px 10px;
+}
+/* стили для чекбоксов*/
+.liItemText{
+	font: normal 18px Tahoma sans-serif;
+	margin: 0 ;
+	cursor: pointer;
+}	
+
+input[type="checkbox"] {
+	margin: 7px 3px 0 0 ;
+}
+

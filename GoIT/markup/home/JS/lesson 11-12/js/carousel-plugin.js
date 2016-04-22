@@ -14,7 +14,7 @@
 		var pictureField;
 		$elementsList = $('.carousel-list');
 
-		var pixelsOffset = parseInt(settings.blockWidth);//ширина блока(картинка+ откступы)
+		var pixelsOffset = parseInt(settings.blockWidth);//ширина блока(картинка+ отступы)
 		var currentLeftValue = settings.currentLeftValue;//начальное положение 1 картинки
 		var elementsCount = this.find('li').length;//кол-во картинок
 			//minimumOffset, maximumOffset - значения которые будут нужны, чтобы картинки не выходили за область видимости    
