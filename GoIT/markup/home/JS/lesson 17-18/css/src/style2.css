@@ -1,0 +1,14 @@
+.menu{
+	font: bold 14px sans-serif;
+	color: rgba(244,81,30 ,1);
+
+}
+h2{
+	font: italic bold 25px Tahoma sans-serif;
+	/* text-align: center; */
+	color: rgba(191,54,12 ,1);
+}	
+h1{
+	color:rgba(221,44,0 ,1);
+	text-align: center;
+}

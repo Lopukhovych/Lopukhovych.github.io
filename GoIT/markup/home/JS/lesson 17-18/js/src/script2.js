@@ -1,0 +1,1 @@
+console.log("Second script is connected")

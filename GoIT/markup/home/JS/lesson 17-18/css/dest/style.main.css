@@ -1,0 +1,22 @@
+.wrapper{
+	background:rgba(255,253,231 ,1);
+	border:1px solid rgba(255,245,157 ,1);
+	border-radius: 20px;
+	width: 60%;
+	margin: 0.5% auto;
+	padding: 0.05% 1%;
+
+};.menu{
+	font: bold 14px sans-serif;
+	color: rgba(244,81,30 ,1);
+
+}
+h2{
+	font: italic bold 25px Tahoma sans-serif;
+	/* text-align: center; */
+	color: rgba(191,54,12 ,1);
+}	
+h1{
+	color:rgba(221,44,0 ,1);
+	text-align: center;
+}
