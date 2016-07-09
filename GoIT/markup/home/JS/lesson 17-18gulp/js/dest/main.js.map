@@ -1,0 +1,1 @@
+{"version":3,"sources":["script1.js","script2.js"],"names":["console","log"],"mappings":"AAAAA,QAAAC,IAAA,2BCAAD,QAAAC,IAAA","file":"main.js","sourcesContent":["console.log('Первый скрипт подключен');","console.log('Второй скрипт подключен');"],"sourceRoot":"/source/"}
