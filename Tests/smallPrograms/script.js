@@ -25,14 +25,12 @@
             }
         return answer;
     }
-    // console.log(primeFactors(11175460));
-
     let input = document.getElementById('enterNumb');
-    let button = document.getElementsByClassName('expand')[0];
+    let form = document.getElementsByClassName('numb-enter')[0];
     let result = document.querySelector('.result');
     let number = document.createElement('p');
-    // console.log(result);
-    button.addEventListener('click',function(){
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
         if(!input.value || !isFinite(input.value) ){
             number.innerHTML = "Введено неверное значение или поле для ввода пустое";
             number.style.color = '#d32f2f';
