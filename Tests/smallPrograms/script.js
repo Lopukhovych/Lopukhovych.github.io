@@ -25,6 +25,8 @@
             }
         return answer;
     }
+    // console.log(primeFactors(11175460));
+
     let input = document.getElementById('enterNumb');
     let form = document.getElementsByClassName('numb-enter')[0];
     let result = document.querySelector('.result');
