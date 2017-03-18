@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jPages.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+	<!-- <script src="js/jquery.pajinate.js"></script> -->
+	<script src='js/jPages.js'></script>
+	<script async src='js/script.js'></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="holder"></div>		
+		<ul id="itemContainer">
+		<!-- first window -->
+			<li>
+				<div class="form1">
+						<p>1. Введите имя и e-mail</p>
+						<form action="#">
+							<p><input type="text" placeholder='Имя' required> </p>
+							<p><input type="email" placeholder='e-mail' required></p>
+						</form>
+				</div>	
+			 </li>
+		<!-- second window -->
+			<li>
+			  <div class="form2">
+						<p>2. Выберите страну и город</p>
+						<form action="#">
+							<p><input class='country' type="text" name="country" list='country_list' placeholder='Страна'  autocomplete="off">
+								<datalist id='country_list' ></datalist>
+							</p>
+							<p><input class='city' type="text" name='city' placeholder='Город' autocomplete="off" list='city_list'>
+								<datalist id='city_list'></datalist>
+							</p>
+						</form>
+				</div>
+			 </li>
+		<!-- third window -->
+			<li> 
+				<div class="form3">
+							<p>3. Отметьте социальные сети</p>
+								<form action="#">
+									<div class="Facebook">
+										<input type="checkbox" id="facebook"> <label for="facebook">Facebook</label>
+										<input type="text" placeholder='Ваша страница на Facebook'>
+									</div>
+									<div class="Vkontakte">
+										<input type="checkbox" id="vk"> <label for="vk">Вконтакте</label>
+										<input type="text" placeholder='Ваша страница Вконтакте'>
+									</div>
+									<div class="Twitter">
+										<input type="checkbox" id='twitter'><label for="twitter">Twitter</label>
+										<input type="text" placeholder='Ваша страница в Twitter'>
+									</div>
+									<div class="classmates">
+										<input type="checkbox" id='classmates'><label for="classmates">Одноклассники</label>
+										<input type="text" placeholder='Ваша страница в Одноклассниках'>
+									</div>
+								</form>
+				</div>
+			 </li>
+		<!-- fourth window -->
+			<li>
+				<div class="form4">
+						<p>4. Выберите любимого котика</p>
+						<div class="images">
+							<img src="img/cat01.jpg" alt="коричневый котик">
+							<img src="img/cat02.jpg" alt="рыжий котик">
+							<img src="img/cat03.jpg" alt="серый котик">
+							<img src="img/dog04.jpg" alt="собачка">
+						</div>
+					</div>
+			 </li>
+		<!-- result -->
+			<li>
+				<div class="result">
+				<!-- <img src="files/cat01.jpg" alt=""> -->
+				</div>
+			 </li>
+		</ul>
+	 </div>
+</body>
+</html>
