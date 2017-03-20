@@ -1017,12 +1017,12 @@ footer .icons-footer a:nth-child(3) {
 	}
 	.sideNav .menu-level1 .btn-my-way img{
 		margin-left: 5px;
-		transition: 0.6s;
+		transition: 1s;
 		transform: rotate(0deg);
 	}
 	.sideNav .menu-level1 .btn-my-way img.transformed{
 		transform: rotate(90deg);
-		transition: 0.6s;
+		transition: 1s;
 	}
 	.sideNav .menu-level2{
 		margin: 5px 0 0 2px;
@@ -1353,8 +1353,16 @@ footer .icons-footer a:nth-child(3) {
 	.sideNav .menu-level2{
 		margin: 5px 0 0 2px;
 		display:none;
+		/*opacity:0;*/
+		/*height: 0;*/
+		/*transition: 5s;*/
 	}
-
+	.sideNav .menu-level2-visible{
+		display:block;
+		opacity:1;
+		height: auto;
+		transition: 5s;
+	}
 	.sideNav .menu-level2 a{
 		font-size: 16px;
 		display: block;
@@ -1366,6 +1374,7 @@ footer .icons-footer a:nth-child(3) {
 		border: none;
 		background: transparent;
 		padding: 0 0 0 13px;
+		/*display: none;*/
 	}
 	.sideNav .menu-level2 a:hover{
 		color:#d90118;
