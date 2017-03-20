@@ -292,8 +292,10 @@
 
     .calendar-legend > div {
         display: inline-block;
-        width: 47%;
-        padding-left: 5px;
+        width: 34%;
+        padding-left: 5%;
+        margin-left: 7%;
+        vertical-align: top;
     }
 
     .calendar-legend > div > p {
@@ -545,16 +547,19 @@
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
+        width: 80%;
+        margin:0 2%;
     }
 
     .dhx_mini_calendar .dhx_scale_bar {
+        width:10%;
         font-size: 18px !important;
         line-height: 40px !important;
     }
 
     .dhx_mini_calendar .dhx_cal_next_button,
     .dhx_mini_calendar .dhx_cal_prev_button {
-        top: 28px !important;
+        top: 22px !important;
     }
 
     .dhx_mini_calendar .dhx_month_head {

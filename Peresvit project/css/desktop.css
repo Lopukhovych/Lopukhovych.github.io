@@ -306,10 +306,16 @@
         display: inline-block;
         margin: 0;
         border: none;
+        line-height: 1.3rem;
     }
     section.calendar {
-        width: 61%;
-        padding: 6.5% 32px 23px 8.5%;
+        padding: 1% 2% 10px 3%;
+        margin: 2% 1% 1% 1%;
+        width: 60%;
+        /*max-width: 670px;*/
+        box-sizing: border-box;
+        display: block;
+        float: left;
     }
 
     .calendar-box {
@@ -320,17 +326,21 @@
     }
 
     .calendar-legend {
-        padding: 27px 0 0 0;
+        padding: 17px 0 0 0;
+        width: 100%;
     }
 
     .calendar-legend > div {
         display: inline-block;
-        width: 42%;
+        width: 38%;
         line-height: 22px;
         font-size: 14px;
+        vertical-align: top;
+        margin-left: 5%;
+        padding-left: 6%;
     }
     .calendar-legend-item2{
-        margin-left: 11.5%;
+        margin-left: 6.5%;
     }
 
     .calendar-legend > div > p {
@@ -406,7 +416,8 @@
 
     section .event-list {
         /*border-bottom: 1px solid #dbdbdb;*/
-        padding: 30px 12px 0 0;
+        padding: 1% 15px 0 0;
+        float: right;
     }
 
     .event-list h1 {
@@ -414,7 +425,7 @@
         color: #0301ad;
         line-height: 47px;
         text-align: left;
-        margin: 21px 0 0 16px;
+        margin: 7px 0 0 16px;
     }
 
     .event-ul {
@@ -430,6 +441,7 @@
         background: #F5F5F5;
         margin: 0 -1px 5px 0;
         border-radius: 4px;
+        cursor: pointer;
     }
 
     .event-li:before {
@@ -482,6 +494,7 @@
         text-align: center;
         color: white;
         margin-top: 9px;
+        clear:both;
     }
 
     .event-photo-wrapper {
@@ -527,6 +540,7 @@
         bottom: 12px;
         left: 20.4%;
         border-radius: 3px;
+        cursor: pointer;
     }
 
     .event-photo button:before {
@@ -592,15 +606,15 @@
     .event-data-li > span {
         font-weight: bold;
     }
-    section.event-details {
-        font-size: 20px;
-        line-height: 20px;
-        color: #484847;
-        padding: 18px 0 0 0;
-        text-align: center;
-        margin: 2px auto;
-        width: 90%;
-    }
+    /*section.event-details {*/
+        /*font-size: 20px;*/
+        /*line-height: 20px;*/
+        /*color: #484847;*/
+        /*padding: 18px 0 0 0;*/
+        /*text-align: center;*/
+        /*margin: 2px auto;*/
+        /*width: 90%;*/
+    /*}*/
     /*START of NEW CODE*/
 
     .dhx_cal_container.dhx_mini_calendar {
@@ -628,6 +642,8 @@
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
+        width: 80%;
+        margin: 0 2%;
     }
 
     .dhx_mini_calendar .dhx_scale_bar {

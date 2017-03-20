@@ -40,6 +40,7 @@ $(function(){
             // $('.sideNav .menu-level1 .my-way').toggleClass('border-my-way', 100);
         });
         if($('.main-article-item')){$('.main-article-item').first().css('margin-top','3.8%')}
+
     }
     $('.sideNav .menu-level1 .btn-my-way').hover(function(){
         $('.sideNav .menu-level1 .btn-my-way img').attr('src','image/red-arrow.png');},function(){
@@ -50,7 +51,6 @@ $(function(){
     $('.my-way-main .main-article-item  h3').on('click',function(){
     $(this).parent().children('ol').fadeToggle();
     $(this).parent().toggleClass('level1-active');
-    console.log($(this));
     });
 
     if($('.bxslider')){
@@ -65,5 +65,4 @@ $(function(){
             captions: true,
         });
     }
-
 });

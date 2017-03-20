@@ -299,6 +299,7 @@
         display: inline-block;
         width: 46%;
         padding-left: 5px;
+        vertical-align: top;
     }
 
     .calendar-legend > div > p {

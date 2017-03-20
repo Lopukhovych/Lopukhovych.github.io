@@ -561,6 +561,7 @@
         padding: 0;
         border-bottom: 1px solid #dbdbdb;
         color: #9e9e9e;
+
     }
 
     .dhx_mini_calendar .dhx_year_week {
@@ -570,6 +571,8 @@
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
+        width: 80%;
+        margin: 0 2%;
     }
 
     .dhx_mini_calendar .dhx_scale_bar {
