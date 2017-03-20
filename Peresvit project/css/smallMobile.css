@@ -95,7 +95,7 @@
         /*background: red;*/
     }
     main section.archivement{
-        padding: 21px 0 0 0;
+        padding: 21px 0 17px 0;
     }
 
     main .avatar > h3 {
@@ -233,6 +233,10 @@
     main .archivement > .slider {
         display: block;
         margin: auto;
+    }
+    main .archivement .bx-pager,
+    main .archivement .bx-wrapper{
+        bottom: -16px;
     }
 
     main .slider-container {
