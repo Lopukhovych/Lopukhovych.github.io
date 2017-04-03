@@ -1,0 +1,30 @@
+@import 'reset';
+$small-src: 320px;
+$small-src-middle:480px;
+$tablet-src: 768px;
+$tablet-src-middle:986px;
+$desktop-src:1280px;
+$desktop-src-middle:1520px;
+$desktop-src-high: 1920px;
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('../../fonts/open-sans-light.ttf'),
+  url(../../fonts/open-sans-light.woff) format('woff'),
+  url(../../fonts/open-sans-light.ttf) format('truetype');
+}
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+@import 'mobile';
+@import 'tablet';
+@import 'desctop';
+

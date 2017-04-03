@@ -1,0 +1,24 @@
+{
+  "name": "radacode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "volodymyr.lopukhovych",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-debug": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "sass-mediaqueries": "^1.6.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "description": "test_radacode"
+}

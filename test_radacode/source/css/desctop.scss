@@ -1,0 +1,472 @@
+@media screen and (min-width: $desktop-src) {
+  html, body {
+    font-size: 14px;
+    font-family: 'Open Sans Light', arial, sans-serif;
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+;
+  header {
+    @include clearfix;
+    background: url("../../img/head.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-bottom: 5.6%;
+    .header_nav {
+      @include clearfix;
+      width: 100%;
+      ul {
+        @include clearfix;
+        margin: 2% 1% 0 13%;
+        width: 86%;
+        box-sizing: border-box;
+        li {
+          @media (max-width: $desktop-src-middle) {
+            width: 12.9%;
+            height: 42px;
+          }
+          @media (min-width: $desktop-src-high) {
+            width: 10.9%;
+          }
+          float: left;
+          margin: 0.4% 1% 1% 1%;
+          width: 12.9%;
+          height: 42px;
+          text-align: center;
+          box-sizing: border-box;
+          a {
+            @media (max-width: $desktop-src-middle) {
+              font-size: 1.3rem;
+              padding-top: 6.3%;
+            }
+            @media (min-width: $desktop-src-high) {
+              font-size: 2rem;
+            }
+            color: #000;
+            font-size: 1.8rem;
+            padding-top: 3%;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+          }
+          &:nth-child(2) {
+            @media (min-width: $desktop-src-high) {
+              margin-left: 5.5%;
+            }
+            margin-left: 3.2%;
+          }
+          &:nth-child(3) {
+            margin-left: 2.5%;
+          }
+          &:nth-child(4) {
+            @media (min-width: $desktop-src-high) {
+              margin-left: 3%;
+            }
+            margin-left: 2.5%;
+          }
+          &:hover {
+            border: 2px solid #000;
+          }
+        }
+        li.header_nav_logo {
+          float: left;
+          margin-left: 0;
+          margin-top: 0.4%;
+          width: 35%;
+          padding: 0;
+          border: none;
+          a {
+            display: block;
+            height: 100%;
+            width: 41%;
+            margin-left: 1%;
+            padding-top: 0;
+            img {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+    .header-logo {
+      width: 38%;
+      margin: 2.1% 1% 0.5% 17.4%;
+      position: relative;
+      img:nth-child(1) {
+        @media (max-width: $desktop-src-middle) {
+          width: 96%;
+          margin-top: 1.5%;
+        }
+        @media (min-width: $desktop-src-high) {
+          width: 105%;
+        }
+        width: 100%;
+        margin-top: 1.5%;
+      }
+      img:nth-child(2) {
+        @media (max-width: $desktop-src-middle) {
+          width: 192px;
+          clip: rect(0px 65px 58px 0px);
+          right: -45%;
+        }
+        @media (min-width: $desktop-src-high) {
+          clip: rect(0px 87px 80px 0px);
+          width: 255px;
+        }
+        display:none;
+        position: absolute;
+        right: -47%;
+        top: 50.5%;
+        width: 220px;
+        clip: rect(0px 71px 64px 0px);
+      }
+      img:nth-child(3) {
+        @media (max-width: $desktop-src-middle) {
+          clip: rect(0px 132px 60px 68px);
+          width: 191px;
+          right: -49.5%;
+        }
+        @media (min-width: $desktop-src-high) {
+          width: 255px;
+          clip: rect(0px 173px 79px 81px);
+        }
+        display:none;
+        position: absolute;
+        right: -51.5%;
+        top: 32.7%;
+        clip: rect(0px 150px 65px 81px);
+        width: 220px;
+      }
+      img:nth-child(4) {
+        @media (max-width: $desktop-src-middle) {
+          clip: rect(59px 71px 120px 1px);
+          width: 194px;
+          right: -83.7%;
+          top: 17%;
+        }
+        @media (min-width: $desktop-src-high) {
+          right: -84.7%;
+          clip: rect(71px 86px 162px 1px);
+          width: 255px;
+        }
+        display:none;
+        position: absolute;
+        top: 14%;
+        right: -85.7%;
+        clip: rect(71px 83px 141px 1px);
+        width: 218px;
+      }
+      img:nth-child(5) {
+        @media (max-width: $desktop-src-middle) {
+          clip: rect(64px 129px 125px 65px);
+          width: 191px;
+        }
+        @media (min-width: $desktop-src-high) {
+          right: -89%;
+          clip: rect(76px 177px 168px 91px);
+          width: 259px;
+        }
+        display:none;
+        position: absolute;
+        right: -90%;
+        top: 46%;
+        clip: rect(64px 152px 144px 76px);
+        width: 220px;
+      }
+      img:nth-child(6) {
+        @media (max-width: $desktop-src-middle) {
+          clip: rect(0px 197px 65px 130px);
+          width: 193px;
+        }
+        @media (min-width: $desktop-src-high) {
+          width: 255px;
+          top: 128%;
+          clip: rect(0px 260px 93px 180px);
+        }
+        display:none;
+        position: absolute;
+        right: -82.7%;
+        top: 137%;
+        clip: rect(0px 218px 77px 151px);
+        width: 220px;
+      }
+      img:nth-child(7) {
+        @media (max-width: $desktop-src-middle) {
+          clip: rect(72px 191px 127px 131px);
+          width: 191px;
+        }
+        @media (min-width: $desktop-src-high) {
+          width: 260px;
+          top: 136%;
+          right: -80.7%;
+          clip: rect(85px 249px 166px 173px);
+        }
+        display:none;
+        position: absolute;
+        right: -82.7%;
+        top: 147%;
+        clip: rect(72px 216px 144px 149px);
+        width: 220px;
+      }
+    }
+    .header-article {
+      @include clearfix;
+      display: inline-block;
+      float: left;
+      width: 71%;
+      margin: 0 0 0 12%;
+      h1 {
+        font-family: 'Open Sans Light', arial, sans-serif;
+        @media (max-width: $desktop-src-middle) {
+          font-size: 2.57rem;
+          margin: 0.5% 0 4% 13.2%;
+        }
+        font-size: 3.57rem;
+        margin: .5% 0 2% 13.2%;
+      }
+      p {
+        @media (max-width: $desktop-src-middle) {
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          width: 98%;
+          padding-bottom: 2%;
+        }
+        @media (min-width: $desktop-src-high) {
+          font-size: 2.4rem;
+          line-height: 2.6rem;
+        }
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+        width: 97%;
+        margin: 0 0 0 1%;
+        padding: 1.5% 0 1% 1%;
+        text-align: center;
+        word-wrap: normal;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    flex: 1 0 auto;
+    //@include clearfix;
+    .main-article_features {
+      @include clearfix;
+      background: #f5f9f7;
+      float: left;
+      width: 100%;
+      padding: 1% 0 2.5% 0;
+      position: relative;
+      h2 {
+        @media (min-width: $desktop-src-high) {
+          font-size: 3.6rem;
+        }
+        font-size: 2.4rem;
+        width: 50%;
+        margin: 2.6% 1% 0 27%;
+      }
+      p {
+        @media (max-width: $desktop-src-middle) {
+          font-size: 1.6rem;
+          line-height: 1.95rem;;
+        }
+        @media (min-width: $desktop-src-high) {
+          font-size: 2.2rem;
+          line-height: 2.5rem;
+        }
+        margin: 3.3% 4% 1% 3.5%;
+        float: left;
+        width: 58%;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+      }
+      img {
+        @media (max-width: $desktop-src-middle) {
+          left: 50.6%;
+          width: 33.2rem;
+          top: 35px;
+        }
+        @media (min-width: $desktop-src-high) {
+          width: 45.2rem;
+        }
+        position: absolute;
+        top: 11%;
+        left: 52.6%;
+        width: 39.2rem;
+      }
+    }
+    .main-section_buy-Now {
+      @include clearfix;
+      background: #f5f9f7;
+      margin: 1.5% 0 0 0;
+      width: 100%;
+      padding: 1% 0 7.1% 0;
+      p:before {
+        position: absolute;
+        top: -14px;
+        left: -96px;
+        display: inline-block;
+        width: 102px;
+        height: 99px;
+        content: '';
+        background: url(../../img/main_logo_1.png) 0 0 no-repeat;
+        background-size: 81%;
+      }
+      p {
+        position: relative;
+        float: left;
+        width: 27%;
+        margin: 6.6% 1% 1% 26.3%;
+        font-size: 4.25rem;
+      }
+      a {
+        @media (max-width: $desktop-src-middle) {
+          margin: 7.3% 23.8% 0 0;
+          width: 172px;
+          height: 59px;
+          font-size: 2.1rem;
+        }
+        @media (min-width: $desktop-src-high) {
+          font-size: 3rem;
+          width: 220px;
+          height: 79px;
+        }
+        display: block;
+        background: #347a51;
+        text-decoration: none;
+        width: 184px;
+        height: 69px;
+        float: right;
+        margin: 7.3% 23.8% 0 0;
+        text-align: center;
+        /* vertical-align: middle; */
+        font-size: 2.6rem;
+        color: #000;
+        padding: 0.9% 0 1% 0;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+
+  }
+  footer {
+
+    @include clearfix;
+    background: url("../../img/footer.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6.25% 17% 1.7%;
+    flex: 0 0 auto;
+    //box-sizing: border-box;
+    .footer-nav {
+      @include clearfix;
+      width: 95%;
+      padding: 0 5%;
+      ul {
+        @include clearfix;
+        margin: 1% 1.1%;
+        width: 100%;
+        li {
+          float: left;
+          @media (max-width: $desktop-src-middle) {
+            margin: 3% 4.1%;
+            width: auto;
+          }
+          @media (min-width: $desktop-src-high) {
+            margin: 3% 3.5% 2.5%;
+          }
+          margin: 3% 3%;
+          width: 13%;
+
+          a {
+            @media (max-width: $desktop-src-middle) {
+              font-size: 1.4rem;
+            }
+            @media (min-width: $desktop-src-high) {
+              font-size: 2rem;
+            }
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: #000;
+            display: block;
+          }
+          a.facebook {
+            @media (max-width: $desktop-src-middle) {
+              width: 65px;
+              background-size: 313px;
+            }
+            @media (min-width: $desktop-src-high) {
+              background-size: 400px;
+              height: 60px;
+              background: url(../../img/socials.png) 7px 0 no-repeat;
+            }
+            display: block;
+            width: 80px;
+            height: 56px;
+            margin-top: -13px;
+            background: url(../../img/socials.png) 17px 0 no-repeat;
+            background-size: 375px;
+          }
+          a.google {
+            @media (max-width: $desktop-src-middle) {
+              width: 65px;
+              background-size: 313px;
+              background: url(../../img/socials.png) -115px 0 no-repeat;
+            }
+            @media (min-width: $desktop-src-high) {
+              background-size: 400px;
+              height: 60px;
+              background: url(../../img/socials.png) -155px 0 no-repeat;
+            }
+            display: block;
+            width: 80px;
+            height: 56px;
+            margin-top: -12px;
+            background: url(../../img/socials.png) -145px 0 no-repeat;
+            background-size: 375px;
+          }
+          a.twitter {
+            @media (max-width: $desktop-src-middle) {
+              width: 68px;
+              background-size: 313px;
+              background: url(../../img/socials.png) -247px 0 no-repeat;
+            }
+            @media (min-width: $desktop-src-high) {
+              background-size: 400px;
+              height: 60px;
+              background: url(../../img/socials.png) -340px 0 no-repeat;
+            }
+            display: block;
+            width: 80px;
+            height: 56px;
+            margin-top: -12px;
+            background: url(../../img/socials.png) -315px 0 no-repeat;
+            background-size: 375px;
+          }
+        }
+      }
+    }
+    .copyright {
+      @media (max-width: $desktop-src-middle) {
+        font-size: 1.28rem;
+        margin-top: 0.6%;
+      }
+      @media (min-width: $desktop-src-high) {
+        font-size: 1.6rem;
+        margin-left: 43.7%;
+      }
+      font-size: 1.45rem;
+      clear: both;
+      width: 30%;
+      margin: 0.5% auto;
+      text-align: center;
+    }
+  }
+}
